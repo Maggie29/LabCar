@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LabCar</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="assets/css/master.css">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar mg-0">
+		<div class="container hidden-xs">
+			<div class="row">
+				<a href="#"><img alt="Brand" src="assets/img/logo.png"></a>
+				<ul class="nav nav-pills pull-right">
+					<li role="presentation"><a href="#">Viaja</a></li>
+					<li role="presentation"><a href="#">Conduce</a></li>
+					<li role="presentation"><a href="#">Inicia Sesión</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel-group mg-0" id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="panel border-0">
+				<div class="panel-heading" role="tab" id="headingOne">
+					<h4 class="panel-title">
+						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+						</a>
+					</h4>
+					<a href="#">
+						<img alt="Brand" src="assets/img/logo.png">
+					</a>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+					<ul class="list-group">
+						<li class="list-group-item"><a href="#">Viaja</a></li>
+						<li class="list-group-item"><a href="#">Conduce</a></li>
+						<li class="list-group-item"><a href="#">Inicia Sesión</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<section class="container-fluid hero">
+		<div class="panel">
+			<div class="panel-body">
+				<h1><span class="hidden-lg">Comienza a viajar con </span><span class="hidden-xs">Disfruta del viaje <br> Eres dueño de tu tiempo</span><br><small class="hidden-xs">Viaja con</small>
+					<img src="assets/img/logo-blanco.png" alt="">
+				</h1>
+				<p class="hidden-xs">REGISTRATE</p>
+				<form class="form-inline hidden-xs">
+					<div class="form-group">
+						<input type="text" class="form-control" id="input1">
+					</div>
+					<label for="input2">O bien</label>
+					<div class="form-group">
+						<input type="text" class="form-control" id="input2">
+					</div>
+				</form><br>
+				<a class="btn btn-default" href="#" role="button"><strong><span class="hidden-lg">Descarga el app</span><span class="hidden-xs">Conviértete en conductor</span></strong></a>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid informacion">
+		<div class="row">
+			<div class="col-xs-12 col-lg-6">
+				<h3 class="hidden-lg">La nueva app</h3><br>
+				<img class="img-responsive" src="assets/img/celular.png" alt="">
+			</div>
+			<div class="hidden-xs col-lg-4 text-left">
+				<h2><strong>Descarga la nueva app</strong></h2>
+				<h3>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</h3>
+				<h3>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</h3>
+			</div>
+		</div>
+		<div class="col-xs-12 hidden-lg">
+			<br>
+			<h4>LLega a tu destino aún mas rápido</h4>
+		</div>
+	</section>
+
+	<section class="container-fluid conductor">
+		<div class="row pull-right">
+			<h2><strong>Conduce cuando quieras</strong></h2>
+			<h4>LabCar es una opción flexible para alcanzar tus metas financieras.</h4>
+			<a class="btn btn-default" href="#" role="button">Conviértete en conductor</a>
+		</div>
+	</section>
+
+	<section class="container-fluid tarifa-box">
+		<div class="row">
+			<div class="col-lg-4 col-lg-offset-1 col-xs-12">
+				<h2>Tarifas</h2><br>
+				<h4>Consulta las tarifas LabCar aquí</h4><br>
+				<form class="form">
+					<div class="form-group">
+						<img src="assets/img/circulo.png" alt="">
+						<input type="text" class="form-control" id="partida" placeholder="Partida">
+					</div>
+					<div class="form-group">
+						<img src="assets/img/flecha.png" alt="">
+						<input type="text" class="form-control" id="destino" placeholder="Destino">
+					</div>
+					<button id="trazar-ruta" type="reset" class="btn btn-default center-block">¡TRAZAR RUTA!</button>
+				</form>
+				<div class="tarifa text-center">
+				</div>
+			</div>
+			<div class="col-lg-6 col-lg-offset-1 hidden-xs">
+				<div id="map" class="map">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<img src="assets/img/logo-blanco.png" alt="">
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-lg-3">
+					<ul class="nav nav-pills icons">
+						<li role="presentation"><a href="#"><i class="icon-facebook"></i></a></li>
+						<li role="presentation"><a href="#"><i class="icon-twitter"></i></a></li>
+						<li role="presentation"><a href="#"><i class="icon-linkedin2"></i></a></li>
+						<li role="presentation"><a href="#"><i class="icon-appleinc"></i></a></li>
+						<li role="presentation"><a href="#"><i class="icon-play3"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-xs-7 col-lg-3">
+					<ul class="nav nav-pills nav-stacked">
+						<li><a href="#">Viaja</a></li>
+						<li><a href="#">Conduce</a></li>
+						<li><a href="#">Ciudades</a></li>
+						<li><a href="#">Ciudades</a></li>
+						<li><a href="#">Entregas</a></li>
+						<li><a href="#">¿Cómo funciona?</a></li>
+						<li><a href="#">Paises</a></li>
+						<li><a href="#">Seguridad</a></li>
+					</ul>
+				</div>
+				<div class="hidden-xs col-lg-3">
+					<ul class="nav nav-pills nav-stacked">
+						<li><a href="#">Oportunidades</a></li>
+						<li><a href="#">Nuestra Historia</a></li>
+						<li><a href="#">Api de LabCar</a></li>
+						<li><a href="#">Eventos</a></li>
+						<li><a href="#">Desarrolladores</a></li>
+						<li><a href="#">Servicios</a></li>
+						<li><a href="#">Laboratoria</a></li>
+						<li><a href="#">Coders</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-5 col-lg-3">
+					<img src="assets/img/app-store.png" alt="">
+					<img src="assets/img/google-play.png" alt="">
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="text-center">© 2017 LabCar technologies Inc.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUnT5nSrPswYTTH3eumYE_nzskWwISDEs&callback=initMap&libraries=places" async defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
